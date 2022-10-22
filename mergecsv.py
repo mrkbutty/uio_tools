@@ -411,7 +411,10 @@ def cli():
             print(f'Saving {outplot.name}...')
             fd = open(outplot, 'w')
             savechart(dftot, ['mbps'], 'Uio Test Script MiB/ Sec', file=fd)
-            savechart(dftot, ['mbnow'], 'Uio Test Script MiB/ Sec', file=fd)
+            savechart(dftot, ['mbnow'], 'Uio Test Script Instant MiB/ Sec', file=fd)
+            df5min=dftot.resample('5Min').mean().dropna()
+            savechart(df5min, ['mbnow'], 'Uio Test Script Instant MiB/ Sec (5-min average)', file=fd)
+
 
 
     return rc          
