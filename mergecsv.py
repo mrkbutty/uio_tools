@@ -7,7 +7,7 @@ __author__  = "Mark Butterworth"
 __version__ = "0.1.0 20221022"
 __license__ = "MIT"
 
-# Ver 0.1.0 20220927  Initial version
+# Ver 0.1.0 20221022  Initial version
 
 # MIT License
 
@@ -347,8 +347,8 @@ def cli():
         print('DEBUG LEVEL:', args.debug)
         print('Arguments:', args)
 
-    if sys.version_info < (3, 6):
-        print('ERROR: Minimum required python version is 3.6')
+    if sys.version_info < (3, 8):
+        print('ERROR: Minimum required python version is 3.8')
         return 10
 
     VERBOSE = args.verbose
