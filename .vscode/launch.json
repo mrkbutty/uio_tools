@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: mergecsv",
+            "type": "python",
+            "request": "launch",
+            "program": "mergecsv.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["UiOmerge.csv", "-f", "C:\\GPSE\\Proj\\UiO_CERN_opportunity\\Uio_POC\\results_Hitachi4UiO_Oct21st2022\\results_Hitachi4UiO\\test32_copy_sas*.csv"]
+        },
+
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
