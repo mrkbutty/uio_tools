@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+UiOmerge.persec.xlsx
+UiOmerge.csv
+UiOmerge.mbps.html
+UiOmerge.persec.csv
